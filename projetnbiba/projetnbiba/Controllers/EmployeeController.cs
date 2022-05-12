@@ -22,5 +22,9 @@ namespace projetnbiba.Controllers
             return View("./views/Employee/ConfirmPage.cshtml",employee);
 
         }
+        public ViewResult AllEmployees()
+        {
+            return View(Repository.GetEmployees());
+        }
     }
 }

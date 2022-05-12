@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+
+    <title>All Employees</title>
+
+
+</head>
+
+<body>
+    <h2>
+        All Employees page
+    </h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Departement</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(Employee emp in Model)
+            {
+                <tr>
+                    <td>@emp.Name</td>
+                    <td>@emp.Departement</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+    
+
+</html>
