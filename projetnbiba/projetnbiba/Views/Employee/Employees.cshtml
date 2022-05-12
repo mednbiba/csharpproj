@@ -1,0 +1,34 @@
+﻿@model Employee;
+
+
+
+<body>
+    <h1>Employees view</h1>
+
+    <form asp-action="Employees" method="post">
+        <div>
+            <label asp-for="Name"> Employee Name</label>
+            <input asp-for="Name"/>
+
+        </div>
+
+        <div>
+            <label asp-for="Departement"> Employee Name</label>
+            <input asp-for="Departement"/>
+
+        </div>
+
+        <div>
+            <label asp-for = "isActive"> Active ?</label>
+            <input type ="checkbox" asp-for="isActive"/>
+
+        </div>
+        <button type="submit">Save</button>
+
+
+
+
+    </form>
+
+
+</body>
