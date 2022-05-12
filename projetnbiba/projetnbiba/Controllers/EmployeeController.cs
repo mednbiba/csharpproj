@@ -16,7 +16,9 @@ namespace projetnbiba.Controllers
 
         [HttpPost]
         public ViewResult Employees(Employee employee)
-        {
+        {   
+            
+            Repository.AddEmployee(employee);
             return View("./views/Employee/ConfirmPage.cshtml",employee);
 
         }
